@@ -20,6 +20,8 @@
 		9C7584EE26CD085A0093FD16 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7584ED26CD085A0093FD16 /* SceneFactory.swift */; };
 		9C7584F426CD200F0093FD16 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7584F326CD200F0093FD16 /* Strings.swift */; };
 		9C7584FA26CE43DA0093FD16 /* BaseSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7584F926CE43DA0093FD16 /* BaseSignUpView.swift */; };
+		9C7584FD26CE50C30093FD16 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7584FC26CE50C30093FD16 /* UIView.swift */; };
+		9C75850026CE590F0093FD16 /* ComponentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7584FF26CE590F0093FD16 /* ComponentHelper.swift */; };
 		C1DEB80C7F3161BFBE2F712D /* Pods_Authorization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA50AAE9859A8CACACCD2A5 /* Pods_Authorization.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		9C7584ED26CD085A0093FD16 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		9C7584F326CD200F0093FD16 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		9C7584F926CE43DA0093FD16 /* BaseSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpView.swift; sourceTree = "<group>"; };
+		9C7584FC26CE50C30093FD16 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9C7584FF26CE590F0093FD16 /* ComponentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentHelper.swift; sourceTree = "<group>"; };
 		FD19680F78D75F691AD7AA1D /* Pods-Authorization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authorization.debug.xcconfig"; path = "Target Support Files/Pods-Authorization/Pods-Authorization.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,11 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				9C7584DC26CCF3590093FD16 /* App */,
+				9C7584FB26CE509D0093FD16 /* Extentions */,
 				9C7584EF26CD09B10093FD16 /* Generated */,
 				9C7584F526CE41F80093FD16 /* Helpers */,
 				9C7584EB26CD08350093FD16 /* Libs */,
 				9C7584DD26CCF3770093FD16 /* Resources */,
 				9C7584DB26CCF34C0093FD16 /* Scenes */,
+				9C7584FE26CE58F10093FD16 /* UIComponents */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -197,6 +203,22 @@
 				9C7584F926CE43DA0093FD16 /* BaseSignUpView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		9C7584FB26CE509D0093FD16 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				9C7584FC26CE50C30093FD16 /* UIView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		9C7584FE26CE58F10093FD16 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9C7584FF26CE590F0093FD16 /* ComponentHelper.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		BA40F1345EBF3000D755608C /* Pods */ = {
@@ -343,6 +365,7 @@
 			files = (
 				9C7584CC26CCEFBB0093FD16 /* SignUpPhoneViewController.swift in Sources */,
 				9C7584F426CD200F0093FD16 /* Strings.swift in Sources */,
+				9C7584FD26CE50C30093FD16 /* UIView.swift in Sources */,
 				9C7584C826CCEFBB0093FD16 /* AppDelegate.swift in Sources */,
 				9C7584CA26CCEFBB0093FD16 /* SceneDelegate.swift in Sources */,
 				9C7584EE26CD085A0093FD16 /* SceneFactory.swift in Sources */,
@@ -351,6 +374,7 @@
 				9C7584E626CD03730093FD16 /* SignUpPhoneFactory.swift in Sources */,
 				9C7584E426CD03640093FD16 /* SignUpPhoneRouter.swift in Sources */,
 				9C7584FA26CE43DA0093FD16 /* BaseSignUpView.swift in Sources */,
+				9C75850026CE590F0093FD16 /* ComponentHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
