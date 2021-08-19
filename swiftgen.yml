@@ -1,0 +1,9 @@
+input_dir: Authorization
+output_dir: Authorization/Generated
+strings:
+  inputs: Resources/Localization/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output:  Strings.swift
+      
+
