@@ -13,6 +13,7 @@ class BaseSignUpView: UIView {
     var titleLabel: UILabel!
     var subTitle: UILabel!
     var signUpButton: UIButton!
+    var stackView: UIStackView!
     
     //MARK: - init
     override init(frame: CGRect) {
@@ -29,6 +30,13 @@ class BaseSignUpView: UIView {
     private func setupViews() {
         backgroundColor = .white
         
+        stackView = {
+            let i = UIStackView()
+            i.axis = .vertical
+            i.spacing = 10
+            return i
+        }()
+        
         titleLabel = {
             let i = UILabel()
             i.font = .boldSystemFont(ofSize: 15)
@@ -42,10 +50,16 @@ class BaseSignUpView: UIView {
             
             return i
         }()
+        
+        addSubview(stackView)
+        stackView.addArrangedSubview(titleLabel)
+        stackView.addArrangedSubview(subTitle)
     }
     
     private func setupConstraints() {
-       
+        stackView.snp.makeConstraints {
+            $0.edges.equalTo(0)
+        }
     }
     
     
